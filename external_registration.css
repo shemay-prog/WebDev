@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(116,105,182);
+    background: -moz-linear-gradient(90deg, rgba(116,105,182,1) 0%, rgba(173,136,198,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(116,105,182,1) 0%, rgba(173,136,198,1) 100%);
+    background: linear-gradient(90deg, rgba(116,105,182,1) 0%, rgba(173,136,198,1) 100%);
+    color: #FFE6E6;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1 {
+    position: relative;
+    margin: 50px 0 25px 0;
+    font-size: 2.3em;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.form-container {
+    margin-left: 90px;
+}
+
+.work-header {
+    padding-top: 5px;
+}
+
+input[type="date"] {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #FFE6E6;
+    border-radius: 6px;
+    background: #fff;
+    color: rgb(116,105,182);
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+input[type="date"]:hover {
+    border-color: #E1AFD1;
+}
+
+input[type="date"]:focus {
+    border-color: #E1AFD1;
+    outline: none;
+}
+
+form {
+    line-height: 30px;
+    margin-left: 400px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid #ddd;
+    margin: 5px;
+    margin-left: 1px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(32,32, 32, .3);
+    background: rgb(116,105,182);
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+}
+
+textarea {
+    margin-top: 15px;
+}
+
+input {
+    outline: none;
+    border: solid 1px #FFE6E6;
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"], input[type="tel"], input[type="date"], textarea, input[type="submit"] {
+    border-radius: 6px;
+    border: none;
+    padding: 3px;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+::placeholder {
+    font-size: 10px;
+    color: rgb(116,105,182);
+    font-family: 'Open Sans', sans-serif;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: #E1AFD1;
+    transition: color 0.3s;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+    color: #E1AFD1;
+    background-color: rgb(116,105,182);
+    padding: 3px;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.785em;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+input[type="submit"] {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(116,105,182);
+    outline: none;
+    cursor: pointer;
+    border-top: solid 1px #FFE6E6;
+    border-bottom: solid 1px #FFE6E6;
+}
+
+input[type="submit"]:hover {
+    color: #E1AFD1;
+    background-color: rgb(116,105,182);
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #FFE6E6;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 10px;
+}
