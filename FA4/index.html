@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>index</title>
+
+    <style>
+        .container {
+            margin-top: 20px; /* add some space on top */
+            margin-bottom: 20px; /* add some space on bottom */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+                <fieldset>
+                    <legend class="row mt-5 mb-4">Personal Information</legend>
+                    <div class="form-row">
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="fname">First Name</label>
+                            <input id="fname" type="text" class="form-control" placeholder="first name" aria-label="first name">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="lname">Last Name</label>
+                            <input id="lname" type="text" class="form-control" placeholder="last name" aria-label="last name">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="lname">Religion</label>
+                            <input id="religion" type="text" class="form-control" placeholder="religion" aria-label="Religion">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="lname">Language Known</label>
+                            <input id="religion" type="text" class="form-control" placeholder=language" aria-label="religion">
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <legend>Gender</legend>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="genderFemale">
+                            <label class="form-check-label" for="genderFemale">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="genderMale" checked>
+                            <label class="form-check-label" for="genderMale">Male</label>
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <legend>Marital Status</legend>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="genderFemale">
+                            <label class="form-check-label" for="marital">Single</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="genderMale" checked>
+                            <label class="form-check-label" for="marital">Married</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="genderMale" checked>
+                            <label class="form-check-label" for="marital">Divorcedied</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="genderMale" checked>
+                        <label class="form-check-label" for="marital">Widowed</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <hr>
+                <fieldset>
+                    <legend class="row mt-5 mb-4">Contact Information</legend>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="contact number">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="contact number">Email</label>
+                            <input type="email" class="form-control" id="contact number" placeholder="Contact Number">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <hr>
+                <fieldset>
+                    <legend class="row mt-5 mb-4">Address Information</legend>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="inputAddress">Full Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-5 mb-3">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Philippines</option>
+                                <option selected>Dubai</option>
+                                <option selected>America</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+            </fieldset>
+
+            <hr>
+            <fieldset>
+                <legend>Educational Attaintment</legend>
+
+                <div class="container text-center">
+                    <div class="row align-items-start">
+                      <div class="col">
+                        <h5>School</h5>
+                        <input type="text" class="form-control" placeholder="Enter School Name">
+                        <input type="text" class="form-control" placeholder="Enter School Name">
+                        <input type="text" class="form-control" placeholder="Enter School Name">
+                      </div>
+
+                      <div class="col">
+                        <h5>Address</h5>
+                        <input type="text" class="form-control" placeholder="Enter School Address">
+                        <input type="text" class="form-control" placeholder="Enter School Address">
+                        <input type="text" class="form-control" placeholder="Enter School Address">
+                      </div>
+
+                      <div class="col">
+                        <h5>Degree</h5>
+                        <input type="text" class="form-control" placeholder="Enter your Degree">
+                        <input type="text" class="form-control" placeholder="Enter your Degree">
+                        <input type="text" class="form-control" placeholder="Enter your Degree">
+                      </div>
+
+                      <div class="col">
+                        <h5>School</h5>
+                        <input type="text" class="form-control" placeholder="Enter School Year">
+                        <input type="text" class="form-control" placeholder="Enter School Year">
+                        <input type="text" class="form-control" placeholder="Enter School Year">
+                      </div>
+                    </div>
+                  </div>
+                  
+
+            </fieldset>
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Submit</button>    
+                   </form>
+    </div>
+    </body>
+</html>
