@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <p id="header" onmouseover="display()">This is a javascript alert!</p>
+    <button type="button" onclick="display()">Click me</button>
+    <button type="button" onclick="showConfirm()">Show confirmation</button>
+    <button type="button" onclick="showPrompt()">Show Prompt</button>
+    <script type="text/Javascript"> //not required
+        let text = document.getElementById("header").innerHTML; //document object model to get the text
+        console.log(text); //to check if its empty or not
+        alert(text);
+        function display() {
+            var head = document.getElementById("header");
+            console.log(head);
+            head.innerHTML = "JavaScript";
+        }
+
+        function showAlert() {
+            alert("This is an alert box");
+        }
+
+        function showConfirm() {
+            var response = confirm("This is to confirm what you want to do.");
+            if (response == true){
+                alert("you clicked ok!");
+            } else {
+                alert("you clicked cancel");
+            }
+        }
+
+        function showPrompt() {
+            var response = prompt("Please, input anything");
+            alert("You have entered: " + response);
+        }
+    </script>
+</body>
+</html>
