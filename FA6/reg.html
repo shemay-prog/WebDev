@@ -17,26 +17,24 @@
                 <h1>Registration Form</h1>
                 <form action="" method="post">
                     <div class="col col-md-12 mb-3">
-                        <label for="email" class="form-label">Email</label>
+                        <label for="email" class="form-label" id="email-field">Email</label>
+                        <span id="email-error" class="error-message">Field required*</span>
                         <input type="text" class="form-control" name="email" id="email">
                     </div>
                     <div class="col col-md-12 mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <span id="username-error" class="error-message">Field required*</span>
+                        <input type="text" class="form-control" name="username" id="username">
+                    </div>
+                    <div class="col col-md-12 mb-3">
                         <label for="password" class="form-label">Password</label>
+                        <span id="password-error" class="error-message">Field required*</span>
                         <input type="password" class="form-control" name="password" id="password">
                     </div>
                     <div class="col col-md-12 mb-3">
                         <label for="confpassword" class="form-label">Confirm Password</label>
+                        <span id="confpassword-error" class="error-message">Field required*</span>
                         <input type="password" class="form-control" name="confpassword" id="confpassword">
-                    </div>
-                    <div class="col col-md-12 mb-3 d-flex">
-                        <div class="col col-md me-3">
-                            <label for="birthdate" class="form-label">Birthdate</label>
-                            <input type="text" class="form-control" name="birthdate" id="birthdate">
-                        </div>
-                        <div class="col col-md mb-3">
-                            <label for="age" class="form-label">Age</label>
-                            <input type="text" class="form-control" name="age" id="age" readonly>
-                        </div>
                     </div>
                     <div>
                         <button type="button" name="submit" id="submit" class="btn btn-primary">Register</button>
@@ -46,6 +44,6 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="reg.js"></script>
 </body>
 </html>
