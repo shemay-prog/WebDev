@@ -20,16 +20,8 @@ submit.addEventListener("click", function(event){
         // If username is not empty, remove any 'empty' class
         username.classList.remove("empty");
         // Proceed with other actions or submit the form
-        alert("Form can be submitted!");
+        alert("Request Password Sucessfully!");
         // For demonstration, you can submit the form here if needed
         // e.g., document.getElementById("myForm").submit();
     }
-});
-
-submit.addEventListener("mouseover", function(){
-    submit.classList.add("button-mouse-over");
-});
-
-submit.addEventListener("mouseout", function(){
-    submit.classList.remove("button-mouse-over");
 });
