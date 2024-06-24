@@ -47,9 +47,6 @@ document.getElementById("submit").addEventListener("click", function() {
     let password = document.getElementById("password").value.trim();
 
     if (username.trim() !== "" && password.trim() !== "") {
-        // Simulate a successful login (replace with actual login logic)
         alert("Login successful!");
-        // Redirect to another page or perform further actions after successful login
-        // Example: window.location.href = "dashboard.html";
     }
 });
