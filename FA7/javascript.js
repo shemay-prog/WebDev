@@ -46,9 +46,7 @@ document.getElementById("submit").addEventListener("click", function() {
     let username = document.getElementById("username").value.trim();
     let password = document.getElementById("password").value.trim();
 
-    if (username === "" || password === "") {
-        alert("Please fill out both username and password fields.");
-    } else {
+    if (username.trim() !== "" && password.trim() !== "") {
         // Simulate a successful login (replace with actual login logic)
         alert("Login successful!");
         // Redirect to another page or perform further actions after successful login
