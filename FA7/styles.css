@@ -1,8 +1,22 @@
-body {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-size: medium;
-    background-image: url('background.png');
-    background-size: 100%;
     color: azure;
+}
+
+body {
+    background-image: url('background.png');
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 img {
@@ -77,10 +91,59 @@ p {
     align-content: center;
 }
 
+#mymodal {
+    color: black;
+}
+
+.title{
+    color: black;
+    font-size: large;
+}
+
+.subtext {
+    color: gray;
+    font-size: small;
+  }
+
 .instructure {
     width: 45%;
     margin: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.empty {
+    border: 2px solid red;
+}
+
+
+
+.form-control.empty::placeholder {
+    color: red;
+}
+
+.title {
+    text-decoration: underline;
+    color: black;
+    font-size: 15px;
+}
+
+.subtext {
+    text-decoration: none;
+}
+
+.subtext:hover {
+    text-decoration: none;
+}
+
+.title:hover {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.mmodal-title, .modal-body:hover {
+    background-color: rgb(242, 242, 242);
+    border-radius: 8px;
 }
