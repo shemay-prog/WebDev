@@ -17,11 +17,7 @@ submit.addEventListener("click", function(event){
         username.classList.add("empty");
         username.setAttribute("placeholder", "Username required*");
     } else {
-        // If username is not empty, remove any 'empty' class
         username.classList.remove("empty");
-        // Proceed with other actions or submit the form
         alert("Request Password Sucessfully!");
-        // For demonstration, you can submit the form here if needed
-        // e.g., document.getElementById("myForm").submit();
     }
 });
